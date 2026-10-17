@@ -7,6 +7,7 @@ import DoshaClock from '../components/dosha/DoshaClock'
 import DoshaCard from '../components/dosha/DoshaCard'
 import DoshaCountdown from '../components/dosha/DoshaCountdown'
 import SeasonBadge from '../components/dosha/SeasonBadge'
+import MoonPhase from '../components/dosha/MoonPhase'
 import SuggestionPanel from '../components/suggestions/SuggestionPanel'
 
 export default function TodayPage() {
@@ -27,6 +28,7 @@ export default function TodayPage() {
           </div>
           <DoshaCountdown currentTime={currentTime} solarTimes={solarTimes} />
           <SeasonBadge season={doshaResult.season} />
+          <MoonPhase date={currentTime} />
         </div>
 
         {/* Right column: dosha card + suggestions */}

@@ -23,6 +23,9 @@ const useAppStore = create(
       vikriti: null,
       vikritiComplete: false,
 
+      // Notifications
+      notificationsEnabled: false,
+
       // Actions
       setLocation: (location, cityName = null) =>
         set({ location, locationStatus: 'granted', cityName }),
@@ -42,6 +45,8 @@ const useAppStore = create(
 
       setVikriti: (vikriti) => set({ vikriti, vikritiComplete: true }),
       resetVikriti: () => set({ vikriti: null, vikritiComplete: false }),
+
+      setNotificationsEnabled: (enabled) => set({ notificationsEnabled: enabled }),
     }),
     {
       name: 'ayurved-app-storage',
@@ -51,6 +56,7 @@ const useAppStore = create(
         prakritiComplete: state.prakritiComplete,
         vikriti: state.vikriti,
         vikritiComplete: state.vikritiComplete,
+        notificationsEnabled: state.notificationsEnabled,
         location: state.location,
         cityName: state.cityName,
         locationStatus: state.locationStatus === 'granted' || state.locationStatus === 'manual'
