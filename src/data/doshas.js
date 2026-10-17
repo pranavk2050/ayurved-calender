@@ -1,0 +1,40 @@
+export const DOSHAS = {
+  VATA: {
+    id: 'VATA',
+    label: 'Vata',
+    sanskrit: 'वात',
+    elements: ['Air', 'Ether'],
+    qualities: ['Dry', 'Light', 'Cold', 'Rough', 'Mobile'],
+    color: '#7C3AED',
+    colorLight: '#EDE9FE',
+    colorMid: '#A78BFA',
+    description: 'Vata governs movement, creativity, and the nervous system. When balanced, it brings vitality and enthusiasm.',
+    imbalanceSigns: ['Anxiety', 'Insomnia', 'Dry skin', 'Constipation', 'Restlessness'],
+  },
+  PITTA: {
+    id: 'PITTA',
+    label: 'Pitta',
+    sanskrit: 'पित्त',
+    elements: ['Fire', 'Water'],
+    qualities: ['Hot', 'Sharp', 'Oily', 'Light', 'Spreading'],
+    color: '#DC2626',
+    colorLight: '#FEE2E2',
+    colorMid: '#F87171',
+    description: 'Pitta governs digestion, metabolism, and transformation. When balanced, it brings intelligence and courage.',
+    imbalanceSigns: ['Anger', 'Inflammation', 'Acid reflux', 'Skin rashes', 'Perfectionism'],
+  },
+  KAPHA: {
+    id: 'KAPHA',
+    label: 'Kapha',
+    sanskrit: 'कफ',
+    elements: ['Earth', 'Water'],
+    qualities: ['Heavy', 'Slow', 'Cold', 'Oily', 'Smooth'],
+    color: '#059669',
+    colorLight: '#D1FAE5',
+    colorMid: '#34D399',
+    description: 'Kapha governs structure, lubrication, and stability. When balanced, it brings love, patience, and endurance.',
+    imbalanceSigns: ['Lethargy', 'Weight gain', 'Congestion', 'Attachment', 'Depression'],
+  },
+}
+
+export const DOSHA_IDS = ['VATA', 'PITTA', 'KAPHA']
